@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>有限会社ジョイ・クラフト | JOY CRAFT CO., LTD.</title>
+  <meta name="description" content="山梨・甲府から、パールをはじめとするジュエリー、ファッション小物、化粧品の企画・製造・卸をお届けする有限会社ジョイ・クラフトの公式コーポレートサイトです。">
+  <!-- Google Fonts: Cormorant Garamond (上品な英語セリフ体) & Shippori Mincho (洗練された日本語明朝体) / Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-symbol">
+          <svg viewBox="0 0 60 60" width="42" height="42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="27" stroke="url(#goldGradient)" stroke-width="1.5" stroke-dasharray="2 3"/>
+            <!-- パールモチーフ -->
+            <defs>
+              <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#C5A06D" />
+                <stop offset="50%" stop-color="#E5C79E" />
+                <stop offset="100%" stop-color="#9E7B4A" />
+              </linearGradient>
+              <radialGradient id="pearlGlow" cx="40%" cy="40%" r="55%">
+                <stop offset="0%" stop-color="#FFFFFF" />
+                <stop offset="60%" stop-color="#F4ECE1" />
+                <stop offset="100%" stop-color="#C8B29E" />
+              </radialGradient>
+            </defs>
+            <!-- パールを包み込む「JC」ライン -->
+            <path d="M22 20C17 25 17 35 22 40C26 44 32 43 35 39" stroke="url(#goldGradient)" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M38 21C34 17 28 17 25 20" stroke="url(#goldGradient)" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- 中央の光り輝くパール -->
+            <circle cx="30" cy="30" r="8" fill="url(#pearlGlow)"/>
+            <circle cx="28" cy="28" r="2.5" fill="#FFFFFF" opacity="0.85"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="en-name">JOY CRAFT</span>
+          <span class="ja-name">有限会社ジョイ・クラフト</span>
+        </div>
+      </a>
+
+      <!-- ナビゲーション -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">ホーム <span class="nav-sub">HOME</span></a></li>
+          <li><a href="#about" class="nav-link">私たちについて <span class="nav-sub">ABOUT</span></a></li>
+          <li><a href="#services" class="nav-link">事業内容 <span class="nav-sub">SERVICES</span></a></li>
+          <li><a href="#company" class="nav-link">会社概要 <span class="nav-sub">COMPANY</span></a></li>
+          <li><a href="#contact" class="btn-header-contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <!-- モバイルハンバーガーボタン -->
+      <button class="menu-toggle" id="menuToggle" aria-label="メニューを開閉">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ヒーローセクション -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-bg-decoration">
+      <div class="pearl-circle circle-1"></div>
+      <div class="pearl-circle circle-2"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-sub-title">JOY CRAFT CO., LTD. &mdash; CREATIVE CRAFTSMANSHIP</p>
+      <h1 class="hero-title">
+        美と輝きを、<br>確かなカタチにして。
+      </h1>
+      <p class="hero-desc">
+        宝石とモノづくりの街、山梨・甲府から。<br>
+        厳選されたパールをはじめとするジュエリー、洗練されたファッション小物、<br class="pc-only">
+        日常を彩る化粧品の企画・製造・卸をお届けいたします。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-gold">事業内容を見る</a>
+        <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="scroll-down">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 私たちについて (About Us) -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">ABOUT US</span>
+        <h2 class="section-title">本物の輝きと、寄り添うデザインを</h2>
+        <div class="gold-divider center"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text-col">
+          <h3 class="about-lead">
+            時を越えて愛されるパールと、<br>
+            日常に華やぎを添えるアイテム創り。
+          </h3>
+          <p class="about-paragraph">
+            有限会社ジョイ・クラフトは、日本有数のジュエリー産地として名高い山梨県甲府市を拠点に、長年培われた確かな目利きと職人の技術を活かしたモノづくりを行っております。
+          </p>
+          <p class="about-paragraph">
+            自然が育む神秘的な輝きを持つ「パール」を中心に、現代のライフスタイルに自然と調和するジュエリー、トレンドを取り入れたファッション小物、そして肌本来の美しさを引き出す化粧品を展開。
+          </p>
+          <p class="about-paragraph">
+            企画から素材選定、製造、卸売に至るまで一貫した品質管理を徹底し、お取引先様とエンドユーザー様の双方に心からの「喜び（JOY）」と「信頼」をお届けします。
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
+              <div class="feature-body">
+                <h4>厳選された素材・パール</h4>
+                <p>光沢・テリ・色合いに妥協のない上質な素材を厳選。</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+              <div class="feature-body">
+                <h4>甲府の職人技と柔軟な企画力</h4>
+                <p>OEM・別注・オリジナル企画まで幅広いニーズに迅速対応。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-col">
+          <div class="about-card-image">
+            <div class="image-inner">
+              <div class="card-motif-box">
+                <i class="fa-regular fa-gem large-icon"></i>
+                <div class="motif-text">
+                  <span class="motif-accent">PEARL & JEWELRY</span>
+                  <span class="motif-loc">Kofu, Yamanashi</span>
+                </div>
+              </div>
+            </div>
+            <div class="about-badge">
+              <span class="badge-num">KOFU</span>
+              <span class="badge-txt">CRAFTSMANSHIP</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 事業内容 (Services) -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">OUR BUSINESS</span>
+        <h2 class="section-title">事業内容</h2>
+        <div class="gold-divider center"></div>
+        <p class="section-desc">
+          企画・製造から卸まで。上質さと実用性を兼ね備えた3つの事業を展開しています。
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- 1. ジュエリー事業 -->
+        <article class="service-card">
+          <div class="service-card-header">
+            <div class="service-num">01</div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-ring"></i>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-en">JEWELRY</span>
+            <h3 class="service-title">ジュエリー事業</h3>
+            <p class="service-text">
+              タイムレスな気品と優美な輝きを放つパール（真珠）をはじめ、洗練されたデザインのリング、ネックレス、ピアス、イヤリングなどの企画・製造・卸を行っています。
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> アコヤ真珠・黒蝶・淡水パール各種</li>
+              <li><i class="fa-solid fa-check"></i> 貴金属（K18 / Pt / SV）ジュエリー</li>
+              <li><i class="fa-solid fa-check"></i> OEM・プライベートブランド（PB）受託企画</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 2. ファッション小物 -->
+        <article class="service-card featured">
+          <div class="service-badge">POPULAR</div>
+          <div class="service-card-header">
+            <div class="service-num">02</div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-en">FASHION ACCESSORIES</span>
+            <h3 class="service-title">ファッション小物</h3>
+            <p class="service-text">
+              旬のトレンドと機能性を両立したバッグ、上質なストール、アクセサリー雑貨を展開。日々のコーディネートに品格とアクセントを添えるアイテムを企画・卸売しています。
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> デザインバッグ・レザー調小物</li>
+              <li><i class="fa-solid fa-check"></i> 季節のストール・ショール・スカーフ</li>
+              <li><i class="fa-solid fa-check"></i> セレクトファッションアクセサリー雑貨</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- 3. 化粧品事業 -->
+        <article class="service-card">
+          <div class="service-card-header">
+            <div class="service-num">03</div>
+            <div class="service-icon-box">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+          </div>
+          <div class="service-card-body">
+            <span class="service-en">COSMETICS</span>
+            <h3 class="service-title">化粧品事業</h3>
+            <p class="service-text">
+              日常の素肌美と自信を引き出すコスメティック製品の展開。安心・安全な品質にこだわり、心地よいテクスチャーと確かな美しさを届けるアイテムをご提案いたします。
+            </p>
+            <ul class="service-list">
+              <li><i class="fa-solid fa-check"></i> スキンケア・基礎化粧品の企画・卸</li>
+              <li><i class="fa-solid fa-check"></i> 質感と仕上がりにこだわったコスメ</li>
+              <li><i class="fa-solid fa-check"></i> 販促・ギフト向けオリジナル企画</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 会社概要 (Company) -->
+  <section class="company-section" id="company">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">COMPANY PROFILE</span>
+        <h2 class="section-title">会社概要</h2>
+        <div class="gold-divider center"></div>
+      </div>
+
+      <div class="company-wrapper">
+        <div class="company-table-container">
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>有限会社ジョイ・クラフト（JOY CRAFT CO., LTD.）</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>
+                  〒400-0807 山梨県甲府市東光寺3丁目8-13
+                </td>
+              </tr>
+              <tr>
+                <th>連絡先</th>
+                <td>
+                  TEL: <a href="tel:055-236-1730" class="tel-link">055-236-1730</a>
+                </td>
+              </tr>
+              <tr>
+                <th>最寄り駅・アクセス</th>
+                <td>JR身延線 善光寺駅より徒歩約13分</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  化粧品・ジュエリー・ファッション小物の企画・製造・卸
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Google Map 埋め込み -->
+        <div class="company-map-container">
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.740889240439!2d138.5866162!3d35.6587425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601bf9e65842817d%3A0xb355fa1103f67f08!2z44CSNDAwLTA4MDcg5bGx5qKo55yM55Sy5bqc5biC5p2x5YWJ5a-677yT5LiB55uu77yY4oiS77yR77yT!5e0!3m2!1sja!2sjp!4v1700000000000!5m2!1sja!2sjp"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <p class="map-caption"><i class="fa-solid fa-location-dot"></i> 山梨県甲府市東光寺3丁目8-13（善光寺駅 徒歩13分）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- お問い合わせ (Contact) -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <div class="section-header text-center">
+          <span class="section-tag" style="color: #E5C79E;">CONTACT US</span>
+          <h2 class="section-title text-white">お問い合わせ</h2>
+          <div class="gold-divider center"></div>
+          <p class="section-desc text-light">
+            卸のお取引、製品の企画・OEM、お見積もりなど、<br class="sp-hidden">
+            お気軽にお問い合わせください。お電話でも承っております。
+          </p>
+        </div>
+
+        <div class="contact-tel-banner">
+          <div class="tel-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <div class="tel-info">
+            <span class="tel-sub">お電話でのお問い合わせはこちら</span>
+            <a href="tel:055-236-1730" class="tel-number">055-236-1730</a>
+            <span class="tel-hours">営業時間: 平日 9:00〜18:00（土日祝除く）</span>
+          </div>
+        </div>
+
+        <!-- お問い合わせフォーム -->
+        <form class="contact-form" id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="companyName">貴社名 <span class="badge-optional">任意</span></label>
+              <input type="text" id="companyName" placeholder="例）株式会社〇〇">
+            </div>
+            <div class="form-group">
+              <label for="userName">お名前 <span class="badge-required">必須</span></label>
+              <input type="text" id="userName" required placeholder="例）山田 太郎">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="userEmail">メールアドレス <span class="badge-required">必須</span></label>
+              <input type="email" id="userEmail" required placeholder="例）info@example.com">
+            </div>
+            <div class="form-group">
+              <label for="userPhone">電話番号 <span class="badge-optional">任意</span></label>
+              <input type="tel" id="userPhone" placeholder="例）090-1234-5678">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inquiryType">お問い合わせ種別 <span class="badge-required">必須</span></label>
+            <select id="inquiryType" required>
+              <option value="">選択してください</option>
+              <option value="卸のお取引について">卸のお取引について</option>
+              <option value="ジュエリー（パール等）に関するお問い合わせ">ジュエリー（パール等）に関するお問い合わせ</option>
+              <option value="ファッション小物に関するお問い合わせ">ファッション小物に関するお問い合わせ</option>
+              <option value="化粧品事業に関するお問い合わせ">化粧品事業に関するお問い合わせ</option>
+              <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="userMessage">お問い合わせ内容 <span class="badge-required">必須</span></label>
+            <textarea id="userMessage" rows="5" required placeholder="ご質問、お取引のご要望、ご相談内容をご記入ください。"></textarea>
+          </div>
+
+          <div class="form-submit text-center">
+            <button type="submit" class="btn btn-gold btn-large">
+              <span>送信する</span> <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </div>
+
+          <!-- 送信完了トースト・メッセージ -->
+          <div id="formSuccessMessage" class="form-success-msg" style="display: none;">
+            <i class="fa-solid fa-circle-check"></i>
+            <p>お問い合わせを送信いたしました。担当者より折り返しご連絡申し上げます。</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-info">
+        <div class="footer-logo">
+          <span class="en-name">JOY CRAFT CO., LTD.</span>
+          <span class="ja-name">有限会社ジョイ・クラフト</span>
+        </div>
+        <p class="footer-address">
+          〒400-0807 山梨県甲府市東光寺3丁目8-13<br>
+          TEL: 055-236-1730
+        </p>
+      </div>
+      <div class="footer-nav">
+        <ul>
+          <li><a href="#hero">ホーム</a></li>
+          <li><a href="#about">私たちについて</a></li>
+          <li><a href="#services">事業内容</a></li>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom text-center">
+      <p>&copy; JOY CRAFT CO., LTD. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // モバイルメニューのトグル
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mainNav.classList.toggle('active');
+    });
+
+    // メニュー内リンククリックで閉じる
+    document.querySelectorAll('.nav-link, .btn-header-contact').forEach(link => {
+      link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        mainNav.classList.remove('active');
+      });
+    });
+
+    // スムーズスクロール
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          const headerHeight = document.getElementById('header').offsetHeight;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerHeight;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // ヘッダーのスクロール検知（透過から背景付加）
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // お問い合わせフォーム送信ハンドラ（フロントエンド仮実装）
+    function handleContactSubmit(e) {
+      e.preventDefault();
+      const successBox = document.getElementById('formSuccessMessage');
+      successBox.style.display = 'block';
+      document.getElementById('contactForm').reset();
+      
+      setTimeout(() => {
+        successBox.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
+  </script>
+</body>
+</html>
