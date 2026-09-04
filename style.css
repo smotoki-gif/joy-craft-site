@@ -565,6 +565,12 @@ h1, h2, h3, h4 {
   gap: 30px;
 }
 
+.services-grid.services-grid-two {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .service-card {
   background: var(--color-bg-cream);
   border: 1px solid rgba(197, 160, 109, 0.3);
