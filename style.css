@@ -156,6 +156,95 @@ h1, h2, h3, h4 {
 }
 
 /* ==========================================
+   制作ツール・開発中書き足し風 テスト公開枠
+   （サイトのネイビー×ゴールドと意図的に統一感をなくしたデザイン）
+   ========================================== */
+.test-preview-banner {
+  background: #FFF000;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #FFF000,
+    #FFF000 14px,
+    #FFE500 14px,
+    #FFE500 28px
+  );
+  border-bottom: 2px solid #000000;
+  padding: 6px 0;
+  width: 100%;
+}
+
+.test-preview-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* いかにもツールで挿入・書き足されたような□枠 */
+.test-preview-box {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: #FFFFFF;
+  border: 2.5px solid #000000;
+  box-shadow: 4px 4px 0px #000000;
+  border-radius: 0px !important;
+  padding: 5px 14px;
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Courier New", monospace, sans-serif;
+  color: #000000;
+  line-height: 1.35;
+}
+
+.test-box-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-right: 2px solid #000000;
+  padding-right: 10px;
+}
+
+.test-dev-tag {
+  background: #E60012;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 11px;
+  padding: 2px 6px;
+  letter-spacing: 0.05em;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.test-env-text {
+  font-size: 11px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.02em;
+}
+
+.test-box-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.test-preview-title {
+  color: #000000;
+  font-weight: 800;
+  font-size: 14px;
+  background: #FFF176;
+  padding: 2px 6px;
+  border: 1px solid #000000;
+  border-radius: 0px;
+}
+
+.test-preview-note {
+  color: #111111;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ==========================================
    ヘッダー (Header)
    ========================================== */
 .site-header {
@@ -307,7 +396,7 @@ h1, h2, h3, h4 {
   background: linear-gradient(135deg, var(--color-navy-dark) 0%, var(--color-primary-navy) 60%, #17366d 100%);
   color: #FFFFFF;
   overflow: hidden;
-  padding: 120px 0 80px;
+  padding: 150px 0 80px;
 }
 
 .hero-overlay {
@@ -1096,13 +1185,40 @@ h1, h2, h3, h4 {
    レスポンシブ対応 (Mobile)
    ========================================== */
 @media (max-width: 850px) {
+  .test-preview-banner {
+    padding: 6px 0;
+  }
+
+  .test-preview-box {
+    gap: 8px;
+    padding: 6px 10px;
+    box-shadow: 2px 2px 0px #000000;
+  }
+
+  .test-box-header {
+    border-right: none;
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 2px;
+  }
+
+  .test-preview-note {
+    font-size: 11px;
+    display: block;
+    width: 100%;
+  }
+
+  .hero-section {
+    padding: 140px 0 60px;
+  }
+
   .menu-toggle {
     display: flex;
   }
 
   .main-nav {
     position: fixed;
-    top: 78px;
+    top: 100%;
     left: 0;
     width: 100%;
     background: rgba(10, 31, 68, 0.98);
