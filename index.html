@@ -13,7 +13,39 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body data-theme="1">
+
+  <!-- デザイン提案切り替えウィジェット（画面右上固定・1〜10） -->
+  <aside class="design-switcher" id="designSwitcher" aria-label="デザイン提案切り替えツール">
+    <div class="switcher-header">
+      <span class="switcher-label"><i class="fa-solid fa-swatchbook"></i> デザイン切替（全10パターン）</span>
+    </div>
+    <div class="switcher-rows">
+      <div class="switcher-row">
+        <span class="row-tag">カラー案:</span>
+        <div class="switcher-btn-group">
+          <button type="button" class="theme-btn active" data-theme="1" aria-label="デザイン1" title="案1: クラシック・ネイビー（現行）">1</button>
+          <button type="button" class="theme-btn" data-theme="2" aria-label="デザイン2" title="案2: ハイエンド・ミニマル（洗練・純白）">2</button>
+          <button type="button" class="theme-btn" data-theme="3" aria-label="デザイン3" title="案3: オーガニック・エレガンス（優美・温もり）">3</button>
+          <button type="button" class="theme-btn" data-theme="4" aria-label="デザイン4" title="案4: 和モダン・ヘリテージ（漆黒・金箔の匠）">4</button>
+          <button type="button" class="theme-btn" data-theme="5" aria-label="デザイン5" title="案5: エディトリアル・モード（トレンド・企画卸）">5</button>
+        </div>
+      </div>
+      <div class="switcher-row">
+        <span class="row-tag">レイアウト案:</span>
+        <div class="switcher-btn-group">
+          <button type="button" class="theme-btn" data-theme="6" aria-label="デザイン6" title="案6: スプリット・ギャラリー（左右2分割）">6</button>
+          <button type="button" class="theme-btn" data-theme="7" aria-label="デザイン7" title="案7: センター・インパクト（中央揃え・巨大英字）">7</button>
+          <button type="button" class="theme-btn" data-theme="8" aria-label="デザイン8" title="案8: B2B商社ポータル（KPIカウンター）">8</button>
+          <button type="button" class="theme-btn" data-theme="9" aria-label="デザイン9" title="案9: マガジン・ルックブック（非対称グリッド）">9</button>
+          <button type="button" class="theme-btn" data-theme="10" aria-label="デザイン10" title="案10: デジタル・クラフト（近未来・ネオン発光）">10</button>
+        </div>
+      </div>
+    </div>
+    <div class="switcher-theme-caption" id="themeCaption">
+      <span class="caption-num">案1</span> クラシック・ネイビー（現行）
+    </div>
+  </aside>
 
   <!-- ヘッダー -->
   <header class="site-header" id="header">
@@ -94,7 +126,8 @@
       <div class="pearl-circle circle-1"></div>
       <div class="pearl-circle circle-2"></div>
     </div>
-    <div class="container hero-content">
+    <!-- 案1: クラシック・ネイビー（現行） -->
+    <div class="container hero-content theme-content theme-1-content">
       <p class="hero-sub-title">JOY CRAFT CO., LTD. &mdash; PEARL & JEWELRY WHOLESALE</p>
       <h1 class="hero-title">
         美と輝きを、<br>確かなカタチにして。
@@ -107,6 +140,294 @@
       <div class="hero-actions">
         <a href="#services" class="btn btn-gold">事業内容を見る</a>
         <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+      </div>
+    </div>
+
+    <!-- 案2: ハイエンド・ミニマル（洗練・純白・メゾン風） -->
+    <div class="container hero-content theme-content theme-2-content">
+      <div class="theme2-badge">FINE JEWELRY &middot; MAISON DE PERLE</div>
+      <p class="hero-sub-title">THE PURITY OF TIMELESS PEARLS</p>
+      <h1 class="hero-title">
+        研ぎ澄まされた、<br>真珠の真価。
+      </h1>
+      <p class="hero-desc">
+        無駄を極限まで削ぎ落とし、素材そのものの本質的な美しさを宿す。<br class="pc-only">
+        甲府の精緻なクラフトマンシップが紡ぎ出す、静謐で現代的なラグジュアリーコレクション。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-theme2-primary">COLLECTION &amp; OEM</a>
+        <a href="#contact" class="btn btn-theme2-outline">CONTACT US</a>
+      </div>
+      <div class="theme2-spec-line">
+        <span>EST. KOFU, JAPAN</span>
+        <span class="spec-divider">/</span>
+        <span>HIGH JEWELRY</span>
+        <span class="spec-divider">/</span>
+        <span>WHOLESALE</span>
+      </div>
+    </div>
+
+    <!-- 案3: オーガニック・エレガンス（優美・温もり・ローズゴールド調） -->
+    <div class="container hero-content theme-content theme-3-content">
+      <div class="theme3-tag"><i class="fa-regular fa-heart"></i> Natural Pearl &amp; Warm Elegance</div>
+      <p class="hero-sub-title">BORN FROM NATURE &middot; CRAFTED FOR LIFE</p>
+      <h1 class="hero-title">
+        自然の奇跡が紡ぐ、<br>やさしい光。
+      </h1>
+      <p class="hero-desc">
+        海が育んだやわらかなパールの温もりを、日々の暮らしへ。<br class="pc-only">
+        身につける人の心をふんわりと照らし、人生の節目にも日常にも寄り添うジュエリーをご提案します。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-theme3-gold">コレクションを見る</a>
+        <a href="#contact" class="btn btn-theme3-soft">お取引・ご相談</a>
+      </div>
+    </div>
+
+    <!-- 案4: 和モダン・ヘリテージ（漆黒・金箔・日本の匠） -->
+    <div class="container hero-content theme-content theme-4-content">
+      <div class="theme4-crest">
+        <span class="theme4-kanji">甲府匠心</span>
+        <span class="theme4-en">JAPANESE HERITAGE</span>
+      </div>
+      <p class="hero-sub-title">TRADITIONAL KOFU CRAFTSMANSHIP &amp; PEARL</p>
+      <h1 class="hero-title">
+        甲府の匠が織りなす、<br>幽玄の輝き。
+      </h1>
+      <p class="hero-desc">
+        水晶加工と宝石の街として百有余年の歴史を誇る、山梨・甲府の彫金技術。<br class="pc-only">
+        選び抜かれた真珠の気品に、日本の美意識と職人の魂を宿した格調高い逸品をお届けします。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-theme4-gold">事業内容・お取引</a>
+        <a href="#contact" class="btn btn-theme4-outline">お問い合わせ</a>
+      </div>
+    </div>
+
+    <!-- 案5: エディトリアル・モード（トレンド・企画卸・ファッション誌風） -->
+    <div class="container hero-content theme-content theme-5-content">
+      <div class="theme5-meta">
+        <span class="theme5-vol">VOL. 2026-27</span>
+        <span class="theme5-cate">EDITORIAL WHOLESALE SOLUTION</span>
+      </div>
+      <p class="hero-sub-title">CONTEMPORARY JEWELRY &amp; FASHION ACCESSORIES</p>
+      <h1 class="hero-title">
+        装いを刷新する、<br>モードとクラフトの共鳴。
+      </h1>
+      <p class="hero-desc">
+        タイムレスなパールから、旬のトレンドを捉えたバッグ・服飾雑貨まで。<br class="pc-only">
+        バイヤー様の店舗の魅力を最大化する、機動的な企画・OEM・卸売をご提案いたします。
+      </p>
+      <div class="hero-actions">
+        <a href="#services" class="btn btn-theme5-primary">LOOKBOOK &amp; SERVICES</a>
+        <a href="#contact" class="btn btn-theme5-secondary">WHOLESALE INQUIRY</a>
+      </div>
+    </div>
+
+    <!-- 案6: スプリット・ギャラリー（左右2分割レイアウト・ボタン縦並び） -->
+    <div class="container hero-content theme-content theme-6-content">
+      <div class="theme6-split-grid">
+        <div class="theme6-left">
+          <span class="theme6-kicker">EXQUISITE PEARL WHOLESALE &middot; KOFU</span>
+          <h1 class="hero-title theme6-title">
+            本物の真珠だけが持つ、<br>深遠なる光沢。
+          </h1>
+          <p class="hero-desc theme6-desc">
+            甲府の職人が厳選した最高峰のアコヤ・南洋真珠。<br>
+            全国の宝飾店・百貨店・バイヤー様へ、比類なき品質と適正価格で供給いたします。
+          </p>
+          <div class="theme6-actions-vertical">
+            <a href="#services" class="btn btn-theme6-solid">
+              <span>卸売・仕入れのご相談</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#works" class="btn btn-theme6-glass">
+              <span>主要取扱サンプルを見る</span>
+              <i class="fa-solid fa-gem"></i>
+            </a>
+          </div>
+        </div>
+        <div class="theme6-right">
+          <div class="theme6-cards">
+            <div class="theme6-mini-card">
+              <div class="card-icon"><i class="fa-regular fa-circle-dot"></i></div>
+              <div class="card-text">
+                <strong>アコヤ真珠</strong>
+                <span>厳選された照りと巻きの美しさ</span>
+              </div>
+            </div>
+            <div class="theme6-mini-card">
+              <div class="card-icon"><i class="fa-solid fa-ring"></i></div>
+              <div class="card-text">
+                <strong>K18 / Pt ジュエリー</strong>
+                <span>甲府工房による精緻な彫金仕立て</span>
+              </div>
+            </div>
+            <div class="theme6-mini-card">
+              <div class="card-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+              <div class="card-text">
+                <strong>OEM / 別注企画</strong>
+                <span>小ロット・ブランド別注に迅速対応</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 案7: センターフォーカス・ビッグタイポグラフィ（中央揃え・フロート円形ボタン・実績バー） -->
+    <div class="container hero-content theme-content theme-7-content text-center">
+      <div class="theme7-watermark">JOY CRAFT</div>
+      <div class="theme7-badge">SINCE KOFU &bull; JAPANESE FINE PEARL</div>
+      <h1 class="hero-title theme7-title">
+        永遠を纏う、気品の一粒。
+      </h1>
+      <p class="hero-desc theme7-desc">
+        山梨県甲府市から、確かな審美眼で選び抜かれたパールジュエリーを。<br>
+        時を超えて受け継がれる美しさを、貴社のビジネスと顧客のもとへお届けします。
+      </p>
+      <div class="theme7-actions-center">
+        <a href="#contact" class="btn-theme7-circular">
+          <span class="btn-top-txt">INQUIRY</span>
+          <span class="btn-main-txt">お取引・商談</span>
+          <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="theme7-stats-strip">
+        <div class="stat-col">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">厳選天然パール素材</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+          <span class="stat-num">KOFU</span>
+          <span class="stat-label">産地直結の職人品質</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-col">
+          <span class="stat-num">OEM / PB</span>
+          <span class="stat-label">柔軟な企画受託体制</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 案8: B2B商社ポータル（ビジネス特化・実績カウンター・アクションヘッダー） -->
+    <div class="container hero-content theme-content theme-8-content">
+      <div class="theme8-header-ribbon">
+        <span class="portal-badge"><i class="fa-solid fa-building"></i> B2B WHOLESALE PORTAL</span>
+        <span class="portal-note">全国の百貨店・宝飾専門店・EC事業者様向け卸売窓口</span>
+      </div>
+      <div class="theme8-main-grid">
+        <div class="theme8-main-col">
+          <h1 class="hero-title theme8-title">
+            宝飾の産地・甲府から直結。<br>
+            パール・ジュエリーの<br><span class="theme8-highlight">高付加価値卸売パートナー</span>
+          </h1>
+          <p class="hero-desc theme8-desc">
+            アコヤ真珠・黒蝶真珠のロット仕入れから、貴金属ジュエリー・服飾雑貨のOEM受託まで。<br>
+            確かな品質基準とスピーディな流通体制で、貴社の商戦と売上拡大を力強くサポートします。
+          </p>
+          <div class="theme8-actions-row">
+            <a href="tel:055-236-1730" class="btn btn-theme8-tel">
+              <i class="fa-solid fa-phone"></i>
+              <span>電話で直通相談: 055-236-1730</span>
+            </a>
+            <a href="#contact" class="btn btn-theme8-buyer">
+              <i class="fa-solid fa-file-invoice"></i>
+              <span>新規お取引・卸カタログ請求</span>
+            </a>
+          </div>
+        </div>
+        <div class="theme8-sidebar-kpi">
+          <div class="kpi-box">
+            <span class="kpi-label">拠点所在地</span>
+            <strong class="kpi-val">山梨県甲府市</strong>
+            <span class="kpi-sub">日本一のジュエリー集積地</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-label">主力取扱品目</span>
+            <strong class="kpi-val">真珠・貴金属・小物</strong>
+            <span class="kpi-sub">フォーマルからトレンドまで網羅</span>
+          </div>
+          <div class="kpi-box">
+            <span class="kpi-label">納品形態</span>
+            <strong class="kpi-val">完成品 ＆ ルース</strong>
+            <span class="kpi-sub">別注パーツ・金具加工対応</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 案9: マガジン・ルックブック（エディトリアルグリッド・カード型CTA） -->
+    <div class="container hero-content theme-content theme-9-content">
+      <div class="theme9-top-row">
+        <div class="theme9-issue">CATALOGUE ARCHIVE / 2026-2027</div>
+        <div class="theme9-brand-sub">JOY CRAFT PEARL &amp; DESIGN ATELIER</div>
+      </div>
+      <h1 class="hero-title theme9-title">
+        真珠を再定義する、<br>新しいクラフトマンシップ。
+      </h1>
+      <p class="hero-desc theme9-desc">
+        冠婚葬祭のフォーマルから、日常を彩るモダンジュエリーまで。<br class="pc-only">
+        今の時代に求められる、洗練されたパールの造形美をお届けします。
+      </p>
+      <div class="theme9-card-grid">
+        <a href="#services" class="theme9-card card-pearl">
+          <span class="card-num">COLLECTION 01</span>
+          <h4>パールジュエリー</h4>
+          <p>アコヤ真珠・南洋・淡水の厳選ネックレス＆ピアス</p>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+        <a href="#services" class="theme9-card card-gold">
+          <span class="card-num">COLLECTION 02</span>
+          <h4>K18 / Pt デザイン</h4>
+          <p>甲府の彫金技術が息づく繊細なリング＆ペンダント</p>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+        <a href="#services" class="theme9-card card-fashion">
+          <span class="card-num">COLLECTION 03</span>
+          <h4>ファッション小物</h4>
+          <p>旬を取り入れたバッグ・ストール・セレクト雑貨</p>
+          <span class="card-arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 案10: フューチャリスティック・デジタルクラフト（近未来・ネオン発光・スペック表示） -->
+    <div class="container hero-content theme-content theme-10-content">
+      <div class="theme10-system-status">
+        <span class="status-indicator"></span>
+        <span class="status-txt">SYSTEM ACTIVE: KOFU CRAFT LAB // PRECISION PEARL ENGINE</span>
+      </div>
+      <h1 class="hero-title theme10-title">
+        PRECISION &amp; LUMINESCENCE<br>
+        <span class="glow-text">テクノロジーと職人技の共鳴。</span>
+      </h1>
+      <p class="hero-desc theme10-desc">
+        ミクロン単位の厳密な品質測定と、甲府の熟練職人の研ぎ澄まされた直感。<br class="pc-only">
+        次世代の宝飾卸売を切り拓く、デジタル・クラフトマンシップの到達点。
+      </p>
+      <div class="theme10-actions">
+        <a href="#services" class="btn btn-theme10-cyber">
+          <i class="fa-solid fa-bolt"></i> EXPLORE SPECS
+        </a>
+        <a href="#contact" class="btn btn-theme10-wire">
+          <i class="fa-solid fa-terminal"></i> B2B ACCESS
+        </a>
+      </div>
+      <div class="theme10-tech-specs">
+        <div class="tech-cell">
+          <span class="cell-k">TERI SCORE</span>
+          <span class="cell-v">AAA+ GRADE</span>
+        </div>
+        <div class="tech-cell">
+          <span class="cell-k">ORIGIN</span>
+          <span class="cell-v">35&deg;39'N 138&deg;35'E KOFU</span>
+        </div>
+        <div class="tech-cell">
+          <span class="cell-k">DISPATCH</span>
+          <span class="cell-v">SPEED &amp; PRECISION</span>
+        </div>
       </div>
     </div>
     <div class="scroll-down">
@@ -561,6 +882,54 @@
         successBox.scrollIntoView({ behavior: 'smooth' });
       }, 100);
     }
+
+    // デザイン提案スイッチャー（1〜10の切り替え）
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    const themeCaption = document.getElementById('themeCaption');
+    const themeNames = {
+      '1': '<span class="caption-num">案1</span> クラシック・ネイビー（現行）',
+      '2': '<span class="caption-num">案2</span> ハイエンド・ミニマル（洗練・純白）',
+      '3': '<span class="caption-num">案3</span> オーガニック・エレガンス（優美・温もり）',
+      '4': '<span class="caption-num">案4</span> 和モダン・ヘリテージ（漆黒・金箔の匠）',
+      '5': '<span class="caption-num">案5</span> エディトリアル・モード（トレンド・企画卸）',
+      '6': '<span class="caption-num">案6</span> スプリット・ギャラリー（左右2分割・縦並びボタン）',
+      '7': '<span class="caption-num">案7</span> センター・インパクト（中央揃え・円形CTA・実績バー）',
+      '8': '<span class="caption-num">案8</span> B2B商社ポータル（実績KPI・直通アクション）',
+      '9': '<span class="caption-num">案9</span> マガジン・ルックブック（非対称カタロググリッド）',
+      '10': '<span class="caption-num">案10</span> デジタル・クラフト（近未来・サイバー発光・高精度）'
+    };
+
+    function applyTheme(themeNum) {
+      document.body.setAttribute('data-theme', themeNum);
+      themeButtons.forEach(btn => {
+        if (btn.getAttribute('data-theme') === themeNum) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+      if (themeCaption && themeNames[themeNum]) {
+        themeCaption.innerHTML = themeNames[themeNum];
+      }
+      try {
+        localStorage.setItem('joycraft_selected_theme', themeNum);
+      } catch (err) {}
+    }
+
+    themeButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selected = btn.getAttribute('data-theme');
+        applyTheme(selected);
+      });
+    });
+
+    // 保存されているテーマがあれば初期反映
+    try {
+      const savedTheme = localStorage.getItem('joycraft_selected_theme');
+      if (savedTheme && themeNames[savedTheme]) {
+        applyTheme(savedTheme);
+      }
+    } catch (e) {}
   </script>
 </body>
 </html>
